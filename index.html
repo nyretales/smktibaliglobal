@@ -13,15 +13,25 @@
 <section class="relative isolate min-h-[760px] h-[100svh] overflow-hidden md:min-h-[700px] lg:min-h-[740px] xl:min-h-[780px] hero" id="beranda">
  <div class="hero-bg" id="heroBg"></div><div class="topline"><span id="progress"></span></div>
  <header id="header" class="absolute inset-x-0 top-0 z-30 flex items-center justify-between px-[5%] py-5 md:px-[5.5%] md:py-7"><a class="brand" href="#beranda"><span class="brand-mark">TI</span><span>SMK TI BALI GLOBAL<br><small style="font-weight:500;opacity:.65;letter-spacing:.18em">SINGARAJA</small></span></a>
- <nav class="hidden items-center gap-4 text-[10px] uppercase tracking-[.12em] text-[#e4ece9] md:flex lg:gap-7"><a href="#profil">Profil</a><a href="#kompetensi">Kompetensi</a><a href="#fasilitas">Fasilitas</a><a href="#kegiatan">Kegiatan</a><a href="#kontak">Kontak</a></nav><button class="menu flex rounded-full border border-white/30 px-3 py-2 text-xs md:hidden" id="menu">MENU</button></header>
+ <nav class="school-nav hidden items-center md:flex" aria-label="Navigasi utama">
+ <a class="school-nav-item is-active" href="#profil" data-nav="profil"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.5V21h13V9.5M9 21v-7h6v7"/></svg><span>Profil</span></a>
+ <a class="school-nav-item" href="#kompetensi" data-nav="kompetensi"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4M7 8h10M7 12h6"/></svg><span>Kompetensi</span></a>
+ <a class="school-nav-item" href="#fasilitas" data-nav="fasilitas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-7h6v7M8 10h.01M16 10h.01"/></svg><span>Fasilitas</span></a>
+ <a class="school-nav-item" href="#kegiatan" data-nav="kegiatan"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4"/><circle cx="12" cy="12" r="8.5"/></svg><span>Kegiatan</span></a>
+ <a class="school-nav-item" href="#kontak" data-nav="kontak"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="m4 7 8 6 8-6"/></svg><span>Kontak</span></a>
+ <span class="school-nav-bubble" aria-hidden="true"></span><span class="school-nav-dot" aria-hidden="true"></span>
+</nav><button class="menu flex rounded-full border border-white/30 px-3 py-2 text-xs md:hidden" id="menu">MENU</button></header>
  <div class="absolute left-[7%] top-[17%] z-10 w-[86%] max-w-[560px] md:left-[6%] md:top-[17%] md:w-[43%] lg:top-[16%] xl:top-[17%] hero-content" id="heroContent"><div class="mb-4 text-[9px] font-bold uppercase tracking-[.28em] text-[#c8ef65] md:text-[10px] kicker" id="kicker">Information Technology & Business School</div><h1 id="title" class="mb-5 max-w-[560px] text-[clamp(2.8rem,10vw,4.4rem)] font-extrabold uppercase leading-[.98] tracking-[-.065em] md:text-[clamp(3.3rem,5.2vw,4.7rem)] xl:text-[clamp(3.5rem,5vw,4.6rem)]">Belajar hari ini,<br>memimpin esok.</h1><p class="mb-6 max-w-[450px] text-[12px] leading-[1.7] text-[#d6e0dc] md:text-[14px] desc" id="desc">Membangun generasi berkarakter, berkompetensi, unggul, dan berjiwa entrepreneur melalui pendidikan teknologi yang kreatif dan relevan.</p><div class="flex flex-wrap items-center gap-4 md:gap-5 actions"><a class="inline-flex items-center gap-4 rounded-sm bg-[#c8ef65] px-5 py-3.5 text-[11px] font-extrabold uppercase tracking-[.08em] text-[#10252b] primary" href="#profil">Jelajahi sekolah <span>↗</span></a><a class="border-b border-white/50 pb-2 text-[10px] uppercase tracking-[.12em] textlink" href="#kompetensi">Program keahlian</a></div></div>
  <div class="absolute bottom-10 left-[7%] z-20 font-display text-xs tracking-[.18em] text-white/70 md:bottom-9 md:left-[6%] slide-count"><b id="num">01</b> / 05</div><div class="absolute right-[2.2%] top-1/2 z-20 hidden [writing-mode:vertical-rl] text-[9px] tracking-[.25em] text-white/60 md:block scrollhint">SCROLL TO EXPLORE ↓</div>
- <div class="absolute bottom-[92px] left-[7%] right-[7%] z-20 flex items-end justify-center gap-2 md:bottom-[66px] md:left-auto md:right-[4%] md:justify-end md:gap-2 lg:right-[4.5%] xl:right-[5.5%] gallery" id="gallery">
+ <div class="absolute bottom-[92px] left-[7%] right-[7%] z-20 overflow-hidden md:bottom-[66px] md:left-auto md:right-[4%] md:w-[59%] lg:right-[4.5%] xl:right-[5.5%] gallery" id="gallery">
+  <div class="gallery-track">
  <div class="card active rounded-md shadow-xl" data-index="0"><img src="assets/learning-1.png"><div class="card-label">Pendidikan<br>Teknologi</div></div>
  <div class="card rounded-md shadow-xl" data-index="1"><img src="assets/character-1.png"><div class="card-label">Karakter<br>& Disiplin</div></div>
  <div class="card rounded-md shadow-xl" data-index="2"><img src="assets/competency-1.png"><div class="card-label">Kompetensi<br>Digital</div></div>
  <div class="card rounded-md shadow-xl" data-index="3"><img src="assets/achievement-3.png"><div class="card-label">Prestasi<br>Siswa</div></div>
  <div class="card rounded-md shadow-xl" data-index="4"><img src="assets/extra-3.png"><div class="card-label">Kreativitas<br>& Bakat</div></div>
+ 
+  </div>
  </div>
  <div class="absolute bottom-[38px] right-[7%] z-30 flex gap-2 md:bottom-5 md:right-[4.5%] controls"><button id="prev" aria-label="Sebelumnya">‹</button><button id="next" aria-label="Berikutnya">›</button></div>
 </section>
@@ -51,9 +61,54 @@ const slides=[
 let current=0;const bg=document.getElementById('heroBg');
 function show(i){current=(i+slides.length)%slides.length;const s=slides[current];bg.style.opacity=0;setTimeout(()=>{bg.style.backgroundImage=`url("${s.img}")`;bg.style.opacity=1;},180);
 document.getElementById('kicker').textContent=s.tag;document.getElementById('title').innerHTML=s.title;document.getElementById('desc').textContent=s.desc;document.getElementById('num').textContent=String(current+1).padStart(2,'0');document.getElementById('progress').style.width=((current+1)/slides.length*100)+'%';
-document.querySelectorAll('.card').forEach((c,n)=>c.classList.toggle('active',n===current));}
+const cards=[...document.querySelectorAll('#gallery .card')];
+cards.forEach((c,n)=>c.classList.toggle('active',n===current));
+const track=document.querySelector('.gallery-track');
+if(track&&cards.length>3){
+ const firstVisible=Math.min(Math.max(current-1,0),cards.length-3);
+ const inset=parseFloat(getComputedStyle(track).paddingLeft)||0;
+ track.style.transform=`translateX(${inset-cards[firstVisible].offsetLeft}px)`;
+ }
+}
 document.getElementById('gallery').addEventListener('click',e=>{let c=e.target.closest('.card');if(c)show(+c.dataset.index)});
 document.getElementById('next').onclick=()=>show(current+1);document.getElementById('prev').onclick=()=>show(current-1);
+
+// Bounce glass navigation: the selected destination pops upward under the pointer.
+const schoolNav=document.querySelector('.school-nav');
+if(schoolNav){
+ const navItems=[...schoolNav.querySelectorAll('.school-nav-item')];
+ const bubble=schoolNav.querySelector('.school-nav-bubble');
+ const dot=schoolNav.querySelector('.school-nav-dot');
+ let selected=Math.max(0,navItems.findIndex(a=>a.classList.contains('is-active')));
+ let navX=0,navV=0,navTarget=0,navHover=false,hoverIndex=selected;
+ const centerOf=i=>navItems[i].offsetLeft+navItems[i].offsetWidth/2;
+ const nearestNav=x=>navItems.reduce((best,_,i)=>Math.abs(centerOf(i)-x)<Math.abs(centerOf(best)-x)?i:best,0);
+ const syncBubbleIcon=i=>{const icon=navItems[i].querySelector('svg');bubble.innerHTML=icon?icon.outerHTML:''};
+ const setSelected=i=>{selected=i;navItems.forEach((a,j)=>a.classList.toggle('is-active',j===i));navTarget=centerOf(i);syncBubbleIcon(i)};
+ const pointerNav=e=>{const r=schoolNav.getBoundingClientRect();return e.clientX-r.left};
+ setSelected(selected);navX=navTarget=centerOf(selected);
+ navItems.forEach((a,i)=>a.addEventListener('click',()=>setSelected(i)));
+ schoolNav.addEventListener('pointermove',e=>{navHover=true;hoverIndex=nearestNav(pointerNav(e));navTarget=centerOf(hoverIndex);syncBubbleIcon(hoverIndex)});
+ schoolNav.addEventListener('pointerleave',()=>{navHover=false;navTarget=centerOf(selected)});
+ schoolNav.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse'){hoverIndex=nearestNav(pointerNav(e));setSelected(hoverIndex)}});
+ function bounceNavFrame(){
+  if(!schoolNav.isConnected)return;
+  const spring=navHover?.17:.13,damping=navHover?.70:.68;
+  if(!navHover)navTarget=centerOf(selected);
+  navV=(navV+(navTarget-navX)*spring)*damping;navX+=navV;
+  const active=navHover?hoverIndex:selected;
+  navItems.forEach((a,i)=>a.classList.toggle('is-under-bubble',i===active));
+  const rise=navHover?-48:-48, scale=navHover?1:.82;
+  const stretch=Math.max(-.14,Math.min(.14,navV/34));
+  bubble.style.opacity=navHover?'1':'.92';
+  bubble.style.transform=`translate3d(${navX-bubble.offsetWidth/2}px,${rise}px,0) scale(${scale*(1+stretch)},${scale*(1-stretch*.65)})`;
+  dot.style.transform=`translate3d(${navX-2.5}px,0,0)`;
+  requestAnimationFrame(bounceNavFrame);
+ }
+ requestAnimationFrame(bounceNavFrame);
+ window.addEventListener('resize',()=>{navX=navTarget=centerOf(selected)});
+}
+
 document.getElementById('menu').onclick=()=>document.getElementById('header').classList.toggle('nav-open');
 
 // Angka statistik mulai menghitung saat bagian statistik masuk ke viewport.
@@ -91,6 +146,14 @@ function setHoveredCard(x,y){
 heroGallery.addEventListener('pointermove',e=>setHoveredCard(e.clientX,e.clientY),{passive:true});
 heroGallery.addEventListener('pointerleave',()=>heroGallery.querySelectorAll('.card.is-hovered').forEach(c=>c.classList.remove('is-hovered')));
 heroGallery.addEventListener('pointerup',()=>setTimeout(()=>heroGallery.querySelectorAll('.card.is-hovered').forEach(c=>c.classList.remove('is-hovered')),180));
+let galleryDragX=null;
+heroGallery.addEventListener('pointerdown',e=>{galleryDragX=e.clientX;},{passive:true});
+heroGallery.addEventListener('pointerup',e=>{
+ if(galleryDragX===null)return;
+ const delta=e.clientX-galleryDragX;galleryDragX=null;
+ if(Math.abs(delta)>45)show(current+(delta<0?1:-1));
+},{passive:true});
+heroGallery.addEventListener('pointercancel',()=>galleryDragX=null);
 show(0);
 let startX=0;document.querySelector('.hero').addEventListener('touchstart',e=>startX=e.touches[0].clientX,{passive:true});
 document.querySelector('.hero').addEventListener('touchend',e=>{let dx=e.changedTouches[0].clientX-startX;if(Math.abs(dx)>55)show(current+(dx<0?1:-1));},{passive:true});

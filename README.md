@@ -34,3 +34,11 @@ CSS production yang sudah dibangun tersedia di `assets/css/tailwind.css`, sehing
 - `xl:` dan `2xl:`: desktop dan layar lebar.
 
 Foto-foto tetap berasal dari folder `assets/` proyek awal. Tidak ada foto stok atau foto AI yang ditambahkan.
+
+## Bounce navigation (liquid glass)
+Navigasi utama desktop kini memakai efek bounce glass:
+- Bubble glass membesar dan memantul ke atas mengikuti pointer.
+- Pada layar sentuh, tab yang disentuh menjadi tab aktif.
+- Titik lime menunjukkan posisi navigasi aktif.
+- Gerakan kembali ke tab aktif saat pointer meninggalkan navigasi.
+- Menghormati preferensi `prefers-reduced-motion` untuk transisi CSS.
